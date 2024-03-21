@@ -1,0 +1,11 @@
+---
+- name: Restart Cluster
+  hosts: rpi-cluster-manager, rpi-cluster-worker
+  gather_facts: false
+  become: true
+  vars:
+    ssh_user: cluster  
+
+  tasks:
+    - name: Restart
+      shell: sudo reboot

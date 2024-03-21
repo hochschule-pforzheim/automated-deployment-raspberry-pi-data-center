@@ -1,0 +1,20 @@
+---
+- name: Mount NFS share
+  hosts: rpi-cluster-manager, rpi-cluster-worker
+  become: true
+
+  vars:
+    nfs_username: rpicluster
+    nfs_password: "{{ '${{ NFS_PASSWORD }}' | password_hash('sha512') }}"
+
+  tasks:
+    - name: Create local mapped directory for the nfs share with chmod 777
+      file:
+        path: /data/
+        state: directory
+        mode: "0777"
+      when: inventory_hostname != groups['rpi-cluster-manager'][0]
+
+    - name: Mount NFS share
+      shell: "mount -t nfs 10.10.10.100:/data /data"
+      when: inventory_hostname != groups['rpi-cluster-manager'][0]

@@ -1,0 +1,4 @@
+interface eth0
+static ip_address={{ hostvars[inventory_hostname]['ipv4_address'] }}/24
+static routers=10.10.10.1
+static domain_name_servers=10.10.10.1, 141.47.4.1, 8.8.8.8

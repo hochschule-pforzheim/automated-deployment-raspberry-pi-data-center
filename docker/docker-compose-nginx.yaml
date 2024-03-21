@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx
+    deploy:
+      replicas: 3
+      placement:
+        constraints:
+          - node.role == worker
+      endpoint_mode: vip
+    volumes:
+      - type: volume
+        source: nfs_data
+        target: /data
+        volume:
+          nocopy: true
+
+volumes:
+  nfs_data:
+    driver: local
+
+networks:
+  ingress:
+    driver: overlay

@@ -1,0 +1,38 @@
+---
+- name: Create a NFS
+  hosts: rpi-cluster-manager
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install NFS packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - nfs-kernel-server
+        - nfs-common
+      when: inventory_hostname == groups['rpi-cluster-manager'][0]
+
+    - name: Configure NFS share
+      lineinfile:
+        path: /etc/exports
+        line: "/data/ 10.10.10.100/24(rw,sync,no_subtree_check,no_root_squash)"
+        state: present
+      when: inventory_hostname == groups['rpi-cluster-manager'][0]
+      notify: Restart NFS
+
+    - name: Create NFS user
+      user:
+        name: rpicluster
+        password: "{{ '${{ NFS_PASSWORD }}' | password_hash('sha512') }}"
+        shell: /bin/false
+      when: inventory_hostname == groups['rpi-cluster-manager'][0]
+
+  handlers:
+    - name: Restart NFS
+      shell: "sudo systemctl restart nfs-kernel-server"
+      when: inventory_hostname == groups['rpi-cluster-manager'][0]

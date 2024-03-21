@@ -1,0 +1,19 @@
+---
+- name: Swarm Deployment Worker
+  hosts: rpi-cluster-worker
+  gather_facts: true
+  become: true
+  vars:
+    ssh_user: cluster
+    swarm_join_token: ""
+
+  tasks:
+    - name: Read swarm token from file
+      slurp:
+        path: /vars/docker_swarm_token.txt
+      register: swarm_join_token
+
+    - name: Add node to Swarm (Worker)
+      command: docker swarm join --token ${{ SWARM_TOKEN }} 10.10.10.100:2377
+      args:
+        creates: /root/.docker/swarm.join

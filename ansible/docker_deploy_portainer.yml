@@ -1,0 +1,24 @@
+---
+- name: Deploy Portainer CE container on Swarm cluster
+  hosts: rpi-cluster-manager
+  gather_facts: yes
+  become: yes
+  vars:
+    ssh_user: cluster
+
+  tasks:
+    - name: Install Docker Compose
+      command: curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose creates=/usr/local/bin/docker-compose
+
+    - name: Set execute permissions for Docker Compose
+      file:
+        path: /usr/local/bin/docker-compose
+        mode: "+x"
+
+    - name: Create Portainer data directory
+      file:
+        path: /opt/portainer
+        state: directory
+
+    - name: Start Portainer container
+      command: docker run -d -p 9000:9000 --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /opt/portainer:/data --name portainer portainer/portainer-ce

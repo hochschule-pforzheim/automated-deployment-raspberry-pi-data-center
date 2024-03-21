@@ -1,0 +1,28 @@
+---
+- name: Promote Worker Node to Manager Node
+  hosts: rpi-cluster-manager
+  become: true
+  vars:
+    ssh_user: cluster
+
+  # This Playbook is only meant for a one-time use during the evaluation of section 6.3 "Robustheit des Clusters".
+
+  tasks:
+    - name: Leave Cluster as Worker
+      shell: "docker swarm leave --force"
+      ignore_errors: true
+      when: ansible_hostname != groups['rpi-cluster-manager'][0]
+
+    - name: Gather Swarm Token for Manager Node
+      shell: "docker swarm join-token manager -q"
+      register: swarm_join_token
+      when: ansible_hostname == groups['rpi-cluster-manager'][0]
+
+    - name: Join Swarm as Manager Node
+      shell: "docker swarm join --token {{ swarm_join_token }} --manager 10.10.10.100:2377"
+      when: ansible_hostname != groups['rpi-cluster-manager'][0]
+
+    - name: Ckeck Cluster status
+      shell: "docker node ls"
+      changed_when: false
+      when: ansible_hostname == groups['rpi-cluster-manager'][0]

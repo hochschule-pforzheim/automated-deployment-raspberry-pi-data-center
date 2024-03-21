@@ -1,0 +1,15 @@
+---
+- name: Ensure Docker Autorun
+  hosts: rpi-cluster-manager, rpi-cluster-worker
+  become: true
+
+  tasks:
+    - name: Add Docker to autostart
+      systemd:
+        name: docker
+        enabled: yes
+
+    - name: Ensure Docker service is running
+      systemd:
+        name: docker
+        state: started

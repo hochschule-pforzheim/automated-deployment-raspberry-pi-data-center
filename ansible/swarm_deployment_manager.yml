@@ -1,0 +1,25 @@
+---
+- name: Swarm Deployment Manager
+  hosts: rpi-cluster-manager
+  gather_facts: true
+  become: true
+
+  tasks:
+    - name: Initialize Swarm (Manager)
+      command: docker swarm init
+      args:
+        creates: /root/.docker/swarm.key
+      register: swarm_init_output
+      changed_when: "swarm_init_output.rc == 0"
+
+    - name: Retrieve Swarm join token (Worker)
+      command: docker swarm join-token -q worker
+      args:
+        creates: /root/.docker/swarm.token
+      register: swarm_token_output
+      changed_when: "swarm_token_output.rc == 0"
+
+    - name: Save swarm token to file
+      copy:
+        content: "{{ swarm_token_output.stdout }}"
+        dest: /vars/docker_swarm_token.txt

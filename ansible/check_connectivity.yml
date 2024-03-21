@@ -1,0 +1,25 @@
+---
+- name: Check Ping and SSH connectivity
+  hosts: rpi-cluster-manager, rpi-cluster-worker
+  gather_facts: false
+  become: true
+  vars:
+    ssh_user: cluster
+
+  tasks:
+    - name: Ping test
+      ping:
+      register: ping_result
+
+    - name: Check SSH connectivity
+      wait_for:
+        host: "{{ inventory_hostname }}"
+        port: 22
+        delay: 1
+        timeout: 5
+      register: ssh_result
+      when: ping_result.ping == 'pong'
+
+    - name: Print results
+      debug:
+        msg: "Host {{ inventory_hostname }} - Ping: {{ ping_result.ping }} - SSH: {{ ssh_result.elapsed }}"

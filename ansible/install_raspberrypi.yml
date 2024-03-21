@@ -1,0 +1,42 @@
+---
+- name: Raspberry Pi 3B+ Configuration
+  hosts: rpi-cluster-fqdn
+  gather_facts: false
+  become: true
+  vars:
+    ssh_user: cluster
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - curl
+        - gnupg2
+        - apt-transport-https
+        - ca-certificates
+        - software-properties-common
+
+    - name: Download Docker convenience script
+      shell: "curl -fsSL https://get.docker.com -o get-docker.sh"
+
+    - name: Run Docker convenience script
+      become: yes
+      shell: "sudo sh get-docker.sh"
+
+    - name: Add pi user to docker group
+      user:
+        name: cluster
+        groups: docker
+        append: yes
+
+    - name: Start and enable Docker service
+      service:
+        name: docker
+        enabled: yes
+        state: started

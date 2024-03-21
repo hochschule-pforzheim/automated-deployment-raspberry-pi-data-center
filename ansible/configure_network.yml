@@ -1,0 +1,18 @@
+---
+- name: Configure static IP for cluster
+  hosts: rpi-cluster-manager, rpi-cluster-worker
+  become: true
+
+  tasks:
+    - name: Create dhcpcd config file
+      template:
+        src: templates/network.j2
+        dest: /etc/dhcpcd.conf
+      notify:
+        - Restart networking service
+
+  handlers:
+    - name: Restart networking service
+      service:
+        name: dhcpcd
+        state: restarted
