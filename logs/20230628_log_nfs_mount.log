@@ -1,0 +1,227 @@
+% ansible-playbook -v -b -c paramiko nfs_share_mount.yml
+
+PLAY [Mount NFS share] ******************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ******************************************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi25 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi25]
+[WARNING]: Platform linux on host clusterpi01 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi01]
+[WARNING]: Platform linux on host clusterpi13 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi13]
+[WARNING]: Platform linux on host clusterpi02 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi02]
+[WARNING]: Platform linux on host clusterpi03 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi03]
+[WARNING]: Platform linux on host clusterpi05 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi05]
+[WARNING]: Platform linux on host clusterpi04 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi04]
+[WARNING]: Platform linux on host clusterpi06 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi06]
+[WARNING]: Platform linux on host clusterpi07 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi07]
+[WARNING]: Platform linux on host clusterpi08 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi08]
+[WARNING]: Platform linux on host clusterpi09 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi09]
+[WARNING]: Platform linux on host clusterpi10 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi10]
+[WARNING]: Platform linux on host clusterpi12 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi12]
+[WARNING]: Platform linux on host clusterpi11 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi11]
+[WARNING]: Platform linux on host clusterpi14 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi14]
+[WARNING]: Platform linux on host clusterpi16 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi16]
+[WARNING]: Platform linux on host clusterpi17 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi17]
+[WARNING]: Platform linux on host clusterpi19 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi19]
+[WARNING]: Platform linux on host clusterpi15 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi15]
+[WARNING]: Platform linux on host clusterpi18 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi18]
+[WARNING]: Platform linux on host clusterpi20 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi20]
+[WARNING]: Platform linux on host clusterpi22 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi22]
+[WARNING]: Platform linux on host clusterpi21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi21]
+[WARNING]: Platform linux on host clusterpi23 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi23]
+[WARNING]: Platform linux on host clusterpi24 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi24]
+[WARNING]: Platform linux on host clusterpi26 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi26]
+[WARNING]: Platform linux on host clusterpi27 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi27]
+[WARNING]: Platform linux on host clusterpi28 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi28]
+[WARNING]: Platform linux on host clusterpi29 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi29]
+[WARNING]: Platform linux on host clusterpi30 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi30]
+[WARNING]: Platform linux on host clusterpi32 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi32]
+[WARNING]: Platform linux on host clusterpi31 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi31]
+[WARNING]: Platform linux on host clusterpi33 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi33]
+[WARNING]: Platform linux on host clusterpi34 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi34]
+[WARNING]: Platform linux on host clusterpi35 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi35]
+[WARNING]: Platform linux on host clusterpi36 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi36]
+
+TASK [Create local mapped directory for the nfs share with chmod 777] *******************************************************************************************************************
+skipping: [clusterpi01] => {"changed": false, "false_condition": "inventory_hostname != groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+ok: [clusterpi25] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi13] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi03] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi02] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi04] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi05] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi06] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi07] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi08] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi09] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi10] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi12] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi11] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi15] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi14] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi16] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi17] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi20] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi19] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi18] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi21] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi22] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi26] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi23] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi24] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi27] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi28] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi29] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi31] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi30] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi32] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi33] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi34] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi36] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+ok: [clusterpi35] => {"changed": false, "gid": 0, "group": "root", "mode": "0777", "owner": "root", "path": "/data/", "size": 4096, "state": "directory", "uid": 0}
+
+TASK [Mount NFS share] ******************************************************************************************************************************************************************
+skipping: [clusterpi01] => {"changed": false, "false_condition": "inventory_hostname != groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+changed: [clusterpi13] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.221470", "end": "2023-06-28 11:21:48.874574", "msg": "", "rc": 0, "start": "2023-06-28 11:21:48.653104", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi25] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.257372", "end": "2023-06-28 11:21:48.894018", "msg": "", "rc": 0, "start": "2023-06-28 11:21:48.636646", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi02] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.200441", "end": "2023-06-28 11:21:48.965736", "msg": "", "rc": 0, "start": "2023-06-28 11:21:48.765295", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi03] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.240609", "end": "2023-06-28 11:21:48.977869", "msg": "", "rc": 0, "start": "2023-06-28 11:21:48.737260", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi04] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.235571", "end": "2023-06-28 11:21:48.983174", "msg": "", "rc": 0, "start": "2023-06-28 11:21:48.747603", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi06] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.203862", "end": "2023-06-28 11:21:52.972091", "msg": "", "rc": 0, "start": "2023-06-28 11:21:52.768229", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi05] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.243977", "end": "2023-06-28 11:21:52.971739", "msg": "", "rc": 0, "start": "2023-06-28 11:21:52.727762", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi07] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.221901", "end": "2023-06-28 11:21:53.037331", "msg": "", "rc": 0, "start": "2023-06-28 11:21:52.815430", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi09] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.225886", "end": "2023-06-28 11:21:53.209776", "msg": "", "rc": 0, "start": "2023-06-28 11:21:52.983890", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi08] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.269236", "end": "2023-06-28 11:21:53.240812", "msg": "", "rc": 0, "start": "2023-06-28 11:21:52.971576", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi10] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.224697", "end": "2023-06-28 11:21:57.076210", "msg": "", "rc": 0, "start": "2023-06-28 11:21:56.851513", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi12] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.188780", "end": "2023-06-28 11:21:57.179048", "msg": "", "rc": 0, "start": "2023-06-28 11:21:56.990268", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi14] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.224515", "end": "2023-06-28 11:21:57.281674", "msg": "", "rc": 0, "start": "2023-06-28 11:21:57.057159", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi15] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.240507", "end": "2023-06-28 11:21:57.304216", "msg": "", "rc": 0, "start": "2023-06-28 11:21:57.063709", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi11] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.488760", "end": "2023-06-28 11:21:57.618662", "msg": "", "rc": 0, "start": "2023-06-28 11:21:57.129902", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi16] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.201693", "end": "2023-06-28 11:22:01.139468", "msg": "", "rc": 0, "start": "2023-06-28 11:22:00.937775", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi19] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.216941", "end": "2023-06-28 11:22:01.265426", "msg": "", "rc": 0, "start": "2023-06-28 11:22:01.048485", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi18] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.236629", "end": "2023-06-28 11:22:01.382764", "msg": "", "rc": 0, "start": "2023-06-28 11:22:01.146135", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi17] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.330897", "end": "2023-06-28 11:22:01.425538", "msg": "", "rc": 0, "start": "2023-06-28 11:22:01.094641", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi20] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.205728", "end": "2023-06-28 11:22:01.586476", "msg": "", "rc": 0, "start": "2023-06-28 11:22:01.380748", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi22] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.232246", "end": "2023-06-28 11:22:05.182203", "msg": "", "rc": 0, "start": "2023-06-28 11:22:04.949957", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi21] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.200908", "end": "2023-06-28 11:22:05.160424", "msg": "", "rc": 0, "start": "2023-06-28 11:22:04.959516", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi24] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.160884", "end": "2023-06-28 11:22:05.444985", "msg": "", "rc": 0, "start": "2023-06-28 11:22:05.284101", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi23] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.240552", "end": "2023-06-28 11:22:05.498165", "msg": "", "rc": 0, "start": "2023-06-28 11:22:05.257613", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi26] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.169026", "end": "2023-06-28 11:22:05.500847", "msg": "", "rc": 0, "start": "2023-06-28 11:22:05.331821", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi27] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.187006", "end": "2023-06-28 11:22:09.076894", "msg": "", "rc": 0, "start": "2023-06-28 11:22:08.889888", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi28] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.191023", "end": "2023-06-28 11:22:09.176841", "msg": "", "rc": 0, "start": "2023-06-28 11:22:08.985818", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi31] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.169540", "end": "2023-06-28 11:22:09.538488", "msg": "", "rc": 0, "start": "2023-06-28 11:22:09.368948", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi29] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.271974", "end": "2023-06-28 11:22:09.565251", "msg": "", "rc": 0, "start": "2023-06-28 11:22:09.293277", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi30] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.228145", "end": "2023-06-28 11:22:09.624964", "msg": "", "rc": 0, "start": "2023-06-28 11:22:09.396819", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi32] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.140208", "end": "2023-06-28 11:22:11.408541", "msg": "", "rc": 0, "start": "2023-06-28 11:22:11.268333", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi33] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.177385", "end": "2023-06-28 11:22:13.257550", "msg": "", "rc": 0, "start": "2023-06-28 11:22:13.080165", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi34] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.222623", "end": "2023-06-28 11:22:13.576327", "msg": "", "rc": 0, "start": "2023-06-28 11:22:13.353704", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi36] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.187829", "end": "2023-06-28 11:22:13.653185", "msg": "", "rc": 0, "start": "2023-06-28 11:22:13.465356", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+changed: [clusterpi35] => {"changed": true, "cmd": "mount -t nfs 10.10.10.100:/data /data", "delta": "0:00:00.221425", "end": "2023-06-28 11:22:13.887191", "msg": "", "rc": 0, "start": "2023-06-28 11:22:13.665766", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+
+PLAY RECAP ******************************************************************************************************************************************************************************
+clusterpi01                : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+clusterpi02                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi03                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi04                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi05                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi06                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi07                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi08                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi09                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi10                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi11                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi12                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi13                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi14                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi15                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi16                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi17                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi18                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi19                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi20                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi21                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi22                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi23                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi24                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi25                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi26                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi27                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi28                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi29                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi30                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi31                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi32                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi33                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi34                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi35                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi36                : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

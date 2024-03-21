@@ -1,0 +1,36 @@
+% ansible-playbook -v -b -c paramiko promote_worker_to_manager.yml
+SSH password: 
+
+PLAY [Promote Worker Node to Manager Node] ********************************************************************************************************************************************
+
+TASK [Gathering Facts] ****************************************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi01 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi01]
+[WARNING]: Platform linux on host clusterpi13 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi13]
+[WARNING]: Platform linux on host clusterpi25 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi25]
+
+TASK [Leave Cluster as Worker] ********************************************************************************************************************************************************
+skipping: [clusterpi01] => {"changed": false, "false_condition": "ansible_hostname != 'clusterpi01'", "skip_reason": "Conditional result was False"}
+changed: [clusterpi13] => {"changed": true, "cmd": "docker swarm leave --force", "delta": "0:00:01.687441", "end": "2023-06-21 13:08:18.234345", "msg": "", "rc": 0, "start": "2023-06-21 13:08:16.546904", "stderr": "", "stderr_lines": [], "stdout": "Node left the swarm.", "stdout_lines": ["Node left the swarm."]}
+changed: [clusterpi25] => {"changed": true, "cmd": "docker swarm leave --force", "delta": "0:00:01.760980", "end": "2023-06-21 13:08:18.217230", "msg": "", "rc": 0, "start": "2023-06-21 13:08:16.456250", "stderr": "", "stderr_lines": [], "stdout": "Node left the swarm.", "stdout_lines": ["Node left the swarm."]}
+
+TASK [Read swarm token from file] *****************************************************************************************************************************************************
+changed: [clusterpi01] => {"changed": true, "false_condition": "ansible_hostname != 'clusterpi01'", "skip_reason": "Conditional result was False"}
+fatal: [clusterpi13]: FAILED! => {"changed": false, "msg": "file not found: /vars/docker_swarm_token.txt"}
+fatal: [clusterpi25]: FAILED! => {"changed": false, "msg": "file not found: /vars/docker_swarm_token.txt"}
+
+TASK [Join Swarm as Manager Node] *****************************************************************************************************************************************************
+fatal: [clusterpi25]: FAILED! => {"changed": true, "cmd": "docker swarm join --token {'changed': False, 'skipped': True, 'skip_reason': 'Conditional result was False', 'false_condition': \"ansible_hostname == 'clusterpi01'\"} --manager 10.10.10.100:2377", "delta": "0:00:00.433395", "end": "2023-06-21 13:23:04.629668", "msg": "non-zero return code", "rc": 125, "start": "2023-06-21 13:23:04.196273", "stderr": "unknown flag: --manager\nSee 'docker swarm join --help'.", "stderr_lines": ["unknown flag: --manager", "See 'docker swarm join --help'."], "stdout": "", "stdout_lines": []}
+fatal: [clusterpi13]: FAILED! => {"changed": true, "cmd": "docker swarm join --token {'changed': False, 'skipped': True, 'skip_reason': 'Conditional result was False', 'false_condition': \"ansible_hostname == 'clusterpi01'\"} --manager 10.10.10.100:2377", "delta": "0:00:00.442208", "end": "2023-06-21 13:23:04.711206", "msg": "non-zero return code", "rc": 125, "start": "2023-06-21 13:23:04.268998", "stderr": "unknown flag: --manager\nSee 'docker swarm join --help'.", "stderr_lines": ["unknown flag: --manager", "See 'docker swarm join --help'."], "stdout": "", "stdout_lines": []}
+fatal: [clusterpi01]: FAILED! => {"changed": true, "cmd": "docker swarm join --token {'changed': True, 'stdout': 'SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-d33w63bfakos1c40u39bfqoms', 'stderr': '', 'rc': 0, 'cmd': 'docker swarm join-token manager -q', 'start': '2023-06-21 13:23:01.340493', 'end': '2023-06-21 13:23:01.531769', 'delta': '0:00:00.191276', 'msg': '', 'stdout_lines': ['SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-d33w63bfakos1c40u39bfqoms'], 'stderr_lines': [], 'failed': False} --manager 10.10.10.100:2377", "delta": "0:00:04.069813", "end": "2023-06-21 13:23:08.517172", "msg": "non-zero return code", "rc": 125, "start": "2023-06-21 13:23:04.447359", "stderr": "unknown flag: --manager\nSee 'docker swarm join --help'.", "stderr_lines": ["unknown flag: --manager", "See 'docker swarm join --help'."], "stdout": "", "stdout_lines": []}
+
+
+PLAY RECAP ****************************************************************************************************************************************************************************
+clusterpi01                : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+clusterpi13                : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+clusterpi25                : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   

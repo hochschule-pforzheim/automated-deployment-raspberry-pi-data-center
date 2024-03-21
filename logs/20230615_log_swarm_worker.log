@@ -1,0 +1,218 @@
+% ansible-playbook -v -b -c paramiko swarm_deployment_worker.yml
+
+PLAY [Swarm Deployment Worker] ******************************************************************************************************************************************
+
+TASK [Gathering Facts] *******************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi05.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi05.local]
+[WARNING]: Platform linux on host clusterpi06.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi06.local]
+[WARNING]: Platform linux on host clusterpi03.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi03.local]
+[WARNING]: Platform linux on host clusterpi02.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi02.local]
+[WARNING]: Platform linux on host clusterpi04.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi04.local]
+[WARNING]: Platform linux on host clusterpi07.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi07.local]
+[WARNING]: Platform linux on host clusterpi08.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi08.local]
+[WARNING]: Platform linux on host clusterpi10.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi10.local]
+[WARNING]: Platform linux on host clusterpi09.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi09.local]
+[WARNING]: Platform linux on host clusterpi11.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi11.local]
+[WARNING]: Platform linux on host clusterpi16.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi16.local]
+[WARNING]: Platform linux on host clusterpi12.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi12.local]
+[WARNING]: Platform linux on host clusterpi15.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi15.local]
+[WARNING]: Platform linux on host clusterpi13.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi13.local]
+[WARNING]: Platform linux on host clusterpi14.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi14.local]
+fatal: [clusterpi19.local]: UNREACHABLE! => {"changed": false, "msg": "[Errno 8] nodename nor servname provided, or not known", "unreachable": true}
+[WARNING]: Platform linux on host clusterpi17.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi17.local]
+[WARNING]: Platform linux on host clusterpi20.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi20.local]
+[WARNING]: Platform linux on host clusterpi18.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi18.local]
+[WARNING]: Platform linux on host clusterpi21.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi21.local]
+[WARNING]: Platform linux on host clusterpi22.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi22.local]
+[WARNING]: Platform linux on host clusterpi23.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi23.local]
+[WARNING]: Platform linux on host clusterpi24.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi24.local]
+[WARNING]: Platform linux on host clusterpi25.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi25.local]
+[WARNING]: Platform linux on host clusterpi26.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi26.local]
+[WARNING]: Platform linux on host clusterpi27.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi27.local]
+[WARNING]: Platform linux on host clusterpi28.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi28.local]
+[WARNING]: Platform linux on host clusterpi30.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi30.local]
+[WARNING]: Platform linux on host clusterpi29.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi29.local]
+[WARNING]: Platform linux on host clusterpi31.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi31.local]
+[WARNING]: Platform linux on host clusterpi32.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi32.local]
+[WARNING]: Platform linux on host clusterpi33.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi33.local]
+[WARNING]: Platform linux on host clusterpi34.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi34.local]
+[WARNING]: Platform linux on host clusterpi35.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi35.local]
+[WARNING]: Platform linux on host clusterpi36.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi36.local]
+
+TASK [Read swarm token from file] ********************************************************************************************************************************
+ok: [Swarm Deployment Worker]
+
+TASK [Add node to Swarm (Worker)] ********************************************************************************************************************************
+changed: [clusterpi03.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.598577", "end": "2023-06-15 15:38:37.125838", "msg": "", "rc": 0, "start": "2023-06-15 15:38:36.527261", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi02.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.692325", "end": "2023-06-15 15:38:37.343150", "msg": "", "rc": 0, "start": "2023-06-15 15:38:36.650825", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi04.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.699344", "end": "2023-06-15 15:38:37.356779", "msg": "", "rc": 0, "start": "2023-06-15 15:38:36.657435", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi05.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.781266", "end": "2023-06-15 15:38:37.370004", "msg": "", "rc": 0, "start": "2023-06-15 15:38:36.588738", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi06.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.772844", "end": "2023-06-15 15:38:37.383925", "msg": "", "rc": 0, "start": "2023-06-15 15:38:36.611081", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi07.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.799394", "end": "2023-06-15 15:38:41.826482", "msg": "", "rc": 0, "start": "2023-06-15 15:38:41.027088", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi08.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.752938", "end": "2023-06-15 15:38:41.932356", "msg": "", "rc": 0, "start": "2023-06-15 15:38:41.179418", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi10.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.748113", "end": "2023-06-15 15:38:42.038359", "msg": "", "rc": 0, "start": "2023-06-15 15:38:41.290246", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi09.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.850090", "end": "2023-06-15 15:38:42.049310", "msg": "", "rc": 0, "start": "2023-06-15 15:38:41.199220", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi11.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.823185", "end": "2023-06-15 15:38:42.368226", "msg": "", "rc": 0, "start": "2023-06-15 15:38:41.545041", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi12.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.836519", "end": "2023-06-15 15:38:46.431042", "msg": "", "rc": 0, "start": "2023-06-15 15:38:45.594523", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi13.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.812281", "end": "2023-06-15 15:38:46.513726", "msg": "", "rc": 0, "start": "2023-06-15 15:38:45.701445", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi15.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.857267", "end": "2023-06-15 15:38:46.520801", "msg": "", "rc": 0, "start": "2023-06-15 15:38:45.663534", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi14.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.931498", "end": "2023-06-15 15:38:46.752110", "msg": "", "rc": 0, "start": "2023-06-15 15:38:45.820612", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi16.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.758687", "end": "2023-06-15 15:38:46.960594", "msg": "", "rc": 0, "start": "2023-06-15 15:38:46.201907", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi18.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.837304", "end": "2023-06-15 15:38:51.192389", "msg": "", "rc": 0, "start": "2023-06-15 15:38:50.355085", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi20.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.848031", "end": "2023-06-15 15:38:51.206683", "msg": "", "rc": 0, "start": "2023-06-15 15:38:50.358652", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi17.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.793159", "end": "2023-06-15 15:38:51.219244", "msg": "", "rc": 0, "start": "2023-06-15 15:38:50.426085", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi21.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.762650", "end": "2023-06-15 15:38:51.345745", "msg": "", "rc": 0, "start": "2023-06-15 15:38:50.583095", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi22.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.777111", "end": "2023-06-15 15:38:51.539824", "msg": "", "rc": 0, "start": "2023-06-15 15:38:50.762713", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi23.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.736404", "end": "2023-06-15 15:38:55.760316", "msg": "", "rc": 0, "start": "2023-06-15 15:38:55.023912", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi26.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.702237", "end": "2023-06-15 15:38:55.830169", "msg": "", "rc": 0, "start": "2023-06-15 15:38:55.127932", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi24.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.719809", "end": "2023-06-15 15:38:55.857178", "msg": "", "rc": 0, "start": "2023-06-15 15:38:55.137369", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi25.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.763456", "end": "2023-06-15 15:38:55.882152", "msg": "", "rc": 0, "start": "2023-06-15 15:38:55.118696", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi27.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.879086", "end": "2023-06-15 15:38:56.211213", "msg": "", "rc": 0, "start": "2023-06-15 15:38:55.332127", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi28.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.730159", "end": "2023-06-15 15:39:00.248836", "msg": "", "rc": 0, "start": "2023-06-15 15:38:59.518677", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi29.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.737009", "end": "2023-06-15 15:39:00.575379", "msg": "", "rc": 0, "start": "2023-06-15 15:38:59.838370", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi31.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.808263", "end": "2023-06-15 15:39:00.590395", "msg": "", "rc": 0, "start": "2023-06-15 15:38:59.782132", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi30.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.764460", "end": "2023-06-15 15:39:00.682071", "msg": "", "rc": 0, "start": "2023-06-15 15:38:59.917611", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi32.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.785537", "end": "2023-06-15 15:39:00.803383", "msg": "", "rc": 0, "start": "2023-06-15 15:39:00.017846", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi33.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.916071", "end": "2023-06-15 15:39:04.988057", "msg": "", "rc": 0, "start": "2023-06-15 15:39:04.071986", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi34.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.887036", "end": "2023-06-15 15:39:05.353498", "msg": "", "rc": 0, "start": "2023-06-15 15:39:04.466462", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi36.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.793478", "end": "2023-06-15 15:39:05.350832", "msg": "", "rc": 0, "start": "2023-06-15 15:39:04.557354", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+changed: [clusterpi35.local] => {"changed": true, "cmd": ["docker", "swarm", "join", "--token", "SWMTKN-1-1s3zn8hoo7lkw7v3fssdk9ndtsjfrv1zezktml1p0zlyxpf8xn-602d2ze6nfuxg515z2m0os8x3", "10.10.10.100:2377"], "delta": "0:00:00.854935", "end": "2023-06-15 15:39:05.465319", "msg": "", "rc": 0, "start": "2023-06-15 15:39:04.610384", "stderr": "", "stderr_lines": [], "stdout": "This node joined a swarm as a worker.", "stdout_lines": ["This node joined a swarm as a worker."]}
+
+PLAY RECAP *******************************************************************************************************************************************************
+clusterpi02.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi03.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi04.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi05.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi06.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi07.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi08.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi09.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi10.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi11.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi12.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi13.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi14.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi15.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi16.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi17.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi18.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi19.local          : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi20.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi21.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi22.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi23.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi24.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi25.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi26.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi27.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi28.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi29.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi30.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi31.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi32.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi33.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi34.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi35.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi36.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

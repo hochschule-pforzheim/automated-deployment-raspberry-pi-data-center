@@ -1,0 +1,37 @@
+cluster@clusterpi01:~ $ docker node ls
+ID                            HOSTNAME      STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+ok96uxonnww87lndyhly2qmwr *   clusterpi01   Ready     Active         Leader           24.0.2
+73kldmsmtsu94na2zkhm2x6fc     clusterpi02   Ready     Active                          24.0.2
+mc3dm24q986wdnapei26znudu     clusterpi03   Ready     Active                          24.0.2
+wzesjpj6cqrrnzljtvkzd4xe8     clusterpi04   Ready     Active                          24.0.2
+sdj43i33gg3664pwwynglw9xq     clusterpi05   Ready     Active                          24.0.2
+uawg54mqeuybr1cm3l9f7643e     clusterpi06   Ready     Active                          24.0.2
+q6xey8hfy40zjti6w5rbo1a5h     clusterpi07   Ready     Active                          24.0.2
+wmd0eg7d4ew4w7xdflmtq1ydj     clusterpi08   Ready     Active                          24.0.2
+mkd335fni6jqrbb8v2v697l1c     clusterpi09   Ready     Active                          24.0.2
+secw0mgwx4cmpvgr2y9hib2yo     clusterpi10   Ready     Active                          24.0.2
+ngl089j09l8guedf5pom6sgo0     clusterpi11   Ready     Active                          24.0.2
+qmta95ay64i5uf1budvhqerv1     clusterpi12   Ready     Active                          24.0.2
+pmyyy961wz2qzi4v6r898s9jg     clusterpi13   Ready     Active                          24.0.2
+o8q8qbxz4opu7r3hn3b7gby6i     clusterpi14   Ready     Active                          24.0.2
+lkx3yaoffddvtwfef9egud54p     clusterpi15   Ready     Active                          24.0.2
+pdod3bs0s1ms2ulguq88rn40v     clusterpi16   Ready     Active                          24.0.2
+wt50s3phlv4xo1676u2dyb4jt     clusterpi17   Ready     Active                          24.0.2
+xxqu18jvlu3j4ec73bu42zbw3     clusterpi18   Ready     Active                          24.0.2
+vmm0848sv4opmy61ykn2ird2f     clusterpi20   Ready     Active                          24.0.2
+ztobypnrwj35w44821eqo0hv4     clusterpi21   Ready     Active                          24.0.2
+5ko1sdzfdb6g6va9eaau6qfjp     clusterpi22   Ready     Active                          24.0.2
+0lluyoe6mbn0l3gudyv7sq8i6     clusterpi23   Ready     Active                          24.0.2
+opl2q7p4wzqfop8tvdyowksxk     clusterpi24   Ready     Active                          24.0.2
+js8w1a6rnwhryn8ytxtb1topp     clusterpi25   Ready     Active                          24.0.2
+x70o0ztmto7ui34txl277roy5     clusterpi26   Ready     Active                          24.0.2
+1umfkqawx2j7uga9b3aaf5j1v     clusterpi27   Ready     Active                          24.0.2
+wowk6t1phnrqooakry9jzu8n1     clusterpi28   Ready     Active                          24.0.2
+i9wzmj76k927l5k4cvjopao1d     clusterpi29   Ready     Active                          24.0.2
+1xm53unzdtqpl5vjnpfl7aoll     clusterpi30   Ready     Active                          24.0.2
+l6wpy6hdgl547xxflihzbdwa6     clusterpi31   Ready     Active                          24.0.2
+1ys6s9ysgp1elwe0l3jxz0nn3     clusterpi32   Ready     Active                          24.0.2
+b04sk285gs1ohvaenvcatrs86     clusterpi33   Ready     Active                          24.0.2
+fj1n47vm7quaqq55mpnpl4cdh     clusterpi34   Ready     Active                          24.0.2
+rsxyyfdh7rivn7ocbw7z8ny06     clusterpi35   Ready     Active                          24.0.2
+uq6yp4x8xvq6soowvar5xqm7t     clusterpi36   Ready     Active                          24.0.2

@@ -1,0 +1,291 @@
+PLAY [Check Ping and SSH connectivity] ***************************************************************************************************************************************
+
+TASK [Ping test] *************************************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi01.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi01.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi05.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi05.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi02.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi02.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi03.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi03.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi04.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi04.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi06.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi06.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi07.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi07.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi08.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi08.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi10.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi10.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi09.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi09.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi11.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi11.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi13.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi13.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi12.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi12.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi15.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi15.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi14.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi14.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi16.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi16.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi17.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi17.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi18.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi18.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi20.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi20.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+fatal: [clusterpi19.local]: UNREACHABLE! => {"changed": false, "msg": "[Errno 8] nodename nor servname provided, or not known", "unreachable": true}
+[WARNING]: Platform linux on host clusterpi21.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi21.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi22.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi22.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi23.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi23.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi24.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi24.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi25.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi25.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi26.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi26.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi27.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi27.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi28.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi28.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi30.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi30.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi29.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi29.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi31.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi31.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi32.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi32.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi33.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi33.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi34.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi34.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi36.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi36.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+[WARNING]: Platform linux on host clusterpi35.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi35.local] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.9"}, "changed": false, "ping": "pong"}
+
+TASK [Check SSH connectivity] ************************************************************************************************************************************************
+ok: [clusterpi01.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi05.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi03.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi02.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi04.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi06.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi07.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi08.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi10.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi09.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi11.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi12.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi13.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi14.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi15.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi16.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi17.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi20.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi18.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi21.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi22.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi23.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi25.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi24.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi26.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi27.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi28.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi29.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi30.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi31.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi32.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi33.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi34.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi36.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [clusterpi35.local] => {"changed": false, "elapsed": 1, "match_groupdict": {}, "match_groups": [], "path": null, "port": 22, "search_regex": null, "state": "started"}
+
+TASK [Print results] *********************************************************************************************************************************************************
+ok: [clusterpi01.local] => {
+    "msg": "Host clusterpi01.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi02.local] => {
+    "msg": "Host clusterpi02.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi03.local] => {
+    "msg": "Host clusterpi03.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi04.local] => {
+    "msg": "Host clusterpi04.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi05.local] => {
+    "msg": "Host clusterpi05.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi06.local] => {
+    "msg": "Host clusterpi06.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi07.local] => {
+    "msg": "Host clusterpi07.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi08.local] => {
+    "msg": "Host clusterpi08.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi09.local] => {
+    "msg": "Host clusterpi09.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi10.local] => {
+    "msg": "Host clusterpi10.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi11.local] => {
+    "msg": "Host clusterpi11.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi12.local] => {
+    "msg": "Host clusterpi12.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi13.local] => {
+    "msg": "Host clusterpi13.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi14.local] => {
+    "msg": "Host clusterpi14.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi15.local] => {
+    "msg": "Host clusterpi15.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi16.local] => {
+    "msg": "Host clusterpi16.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi17.local] => {
+    "msg": "Host clusterpi17.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi18.local] => {
+    "msg": "Host clusterpi18.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi20.local] => {
+    "msg": "Host clusterpi20.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi21.local] => {
+    "msg": "Host clusterpi21.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi22.local] => {
+    "msg": "Host clusterpi22.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi23.local] => {
+    "msg": "Host clusterpi23.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi24.local] => {
+    "msg": "Host clusterpi24.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi25.local] => {
+    "msg": "Host clusterpi25.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi26.local] => {
+    "msg": "Host clusterpi26.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi27.local] => {
+    "msg": "Host clusterpi27.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi28.local] => {
+    "msg": "Host clusterpi28.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi29.local] => {
+    "msg": "Host clusterpi29.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi30.local] => {
+    "msg": "Host clusterpi30.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi31.local] => {
+    "msg": "Host clusterpi31.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi32.local] => {
+    "msg": "Host clusterpi32.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi33.local] => {
+    "msg": "Host clusterpi33.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi34.local] => {
+    "msg": "Host clusterpi34.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi35.local] => {
+    "msg": "Host clusterpi35.local - Ping: pong - SSH: 1"
+}
+ok: [clusterpi36.local] => {
+    "msg": "Host clusterpi36.local - Ping: pong - SSH: 1"
+}
+
+PLAY RECAP *******************************************************************************************************************************************************************
+clusterpi01.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi02.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi03.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi04.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi05.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi06.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi07.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi08.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi09.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi10.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi11.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi12.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi13.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi14.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi15.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi16.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi17.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi18.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi19.local          : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi20.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi21.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi22.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi23.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi24.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi25.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi26.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi27.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi28.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi29.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi30.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi31.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi32.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi33.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi34.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi35.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi36.local          : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

@@ -1,0 +1,52 @@
+% ansible-playbook -v -b -c paramiko nfs_share_create.yml
+
+PLAY [Create a NFS] *********************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ******************************************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi25 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi25]
+[WARNING]: Platform linux on host clusterpi01 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi01]
+[WARNING]: Platform linux on host clusterpi13 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi13]
+
+TASK [Update apt cache] *****************************************************************************************************************************************************************
+ok: [clusterpi01] => {"cache_update_time": 1687943210, "cache_updated": false, "changed": false}
+ok: [clusterpi25] => {"cache_update_time": 1687943213, "cache_updated": false, "changed": false}
+ok: [clusterpi13] => {"cache_update_time": 1687943213, "cache_updated": false, "changed": false}
+
+TASK [Install NFS packages] *************************************************************************************************************************************************************
+skipping: [clusterpi13] => (item=nfs-kernel-server)  => {"ansible_loop_var": "item", "changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "item": "nfs-kernel-server", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi13] => (item=nfs-common)  => {"ansible_loop_var": "item", "changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "item": "nfs-common", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi13] => {"changed": false, "msg": "All items skipped"}
+skipping: [clusterpi25] => (item=nfs-kernel-server)  => {"ansible_loop_var": "item", "changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "item": "nfs-kernel-server", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi25] => (item=nfs-common)  => {"ansible_loop_var": "item", "changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "item": "nfs-common", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi25] => {"changed": false, "msg": "All items skipped"}
+changed: [clusterpi01] => (item=nfs-kernel-server) => {"ansible_loop_var": "item", "cache_update_time": 1687943210, "cache_updated": false, "changed": true, "item": "nfs-kernel-server", "stderr": "", "stderr_lines": [], "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following NEW packages will be installed:\n  nfs-kernel-server\n0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.\nNeed to get 120 kB of archives.\nAfter this operation, 328 kB of additional disk space will be used.\nGet:1 http://deb.debian.org/debian bullseye/main arm64 nfs-kernel-server arm64 1:1.3.4-6 [120 kB]\nFetched 120 kB in 0s (778 kB/s)\nSelecting previously unselected package nfs-kernel-server.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 39778 files and directories currently installed.)\r\nPreparing to unpack .../nfs-kernel-server_1%3a1.3.4-6_arm64.deb ...\r\nUnpacking nfs-kernel-server (1:1.3.4-6) ...\r\nSetting up nfs-kernel-server (1:1.3.4-6) ...\r\nCreated symlink /etc/systemd/system/multi-user.target.wants/nfs-server.service → /lib/systemd/system/nfs-server.service.\r\nJob for nfs-server.service canceled.\r\n\r\nCreating config file /etc/exports with new version\r\n\r\nCreating config file /etc/default/nfs-kernel-server with new version\r\nProcessing triggers for man-db (2.9.4-2) ...\r\n", "stdout_lines": ["Reading package lists...", "Building dependency tree...", "Reading state information...", "The following NEW packages will be installed:", "  nfs-kernel-server", "0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.", "Need to get 120 kB of archives.", "After this operation, 328 kB of additional disk space will be used.", "Get:1 http://deb.debian.org/debian bullseye/main arm64 nfs-kernel-server arm64 1:1.3.4-6 [120 kB]", "Fetched 120 kB in 0s (778 kB/s)", "Selecting previously unselected package nfs-kernel-server.", "(Reading database ... ", "(Reading database ... 5%", "(Reading database ... 10%", "(Reading database ... 15%", "(Reading database ... 20%", "(Reading database ... 25%", "(Reading database ... 30%", "(Reading database ... 35%", "(Reading database ... 40%", "(Reading database ... 45%", "(Reading database ... 50%", "(Reading database ... 55%", "(Reading database ... 60%", "(Reading database ... 65%", "(Reading database ... 70%", "(Reading database ... 75%", "(Reading database ... 80%", "(Reading database ... 85%", "(Reading database ... 90%", "(Reading database ... 95%", "(Reading database ... 100%", "(Reading database ... 39778 files and directories currently installed.)", "Preparing to unpack .../nfs-kernel-server_1%3a1.3.4-6_arm64.deb ...", "Unpacking nfs-kernel-server (1:1.3.4-6) ...", "Setting up nfs-kernel-server (1:1.3.4-6) ...", "Created symlink /etc/systemd/system/multi-user.target.wants/nfs-server.service → /lib/systemd/system/nfs-server.service.", "Job for nfs-server.service canceled.", "", "Creating config file /etc/exports with new version", "", "Creating config file /etc/default/nfs-kernel-server with new version", "Processing triggers for man-db (2.9.4-2) ..."]}
+ok: [clusterpi01] => (item=nfs-common) => {"ansible_loop_var": "item", "cache_update_time": 1687943210, "cache_updated": false, "changed": false, "item": "nfs-common"}
+
+TASK [Configure NFS share] **************************************************************************************************************************************************************
+skipping: [clusterpi13] => {"changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi25] => {"changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+changed: [clusterpi01] => {"backup": "", "changed": true, "msg": "line added"}
+
+TASK [Create NFS user] ******************************************************************************************************************************************************************
+skipping: [clusterpi13] => {"changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi25] => {"changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+changed: [clusterpi01] => {"changed": true, "comment": "", "create_home": true, "group": 1001, "home": "/home/rpicluster", "name": "rpicluster", "password": "NOT_LOGGING_PASSWORD", "shell": "/bin/false", "state": "present", "system": false, "uid": 1001}
+
+TASK [Set NFS user permissions] *********************************************************************************************************************************************************
+skipping: [clusterpi13] => {"changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+skipping: [clusterpi25] => {"changed": false, "false_condition": "inventory_hostname == groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+changed: [clusterpi01] => {"backup": "", "changed": true, "msg": "line added"}
+
+RUNNING HANDLER [Restart NFS] ***********************************************************************************************************************************************************
+changed: [clusterpi01]: => {"changed": true, "msg": "Service nfs-kernel-server: restarted.\n"}
+
+PLAY RECAP ******************************************************************************************************************************************************************************
+clusterpi01                : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi13                : ok=2    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+clusterpi25                : ok=2    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0  

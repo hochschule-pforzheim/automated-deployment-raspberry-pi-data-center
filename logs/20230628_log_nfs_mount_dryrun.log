@@ -1,0 +1,227 @@
+% ansible-playbook -v -b -c paramiko nfs_share_mount.yml
+
+PLAY [Mount NFS share] ******************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ******************************************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi01 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi01]
+[WARNING]: Platform linux on host clusterpi25 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi25]
+[WARNING]: Platform linux on host clusterpi13 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi13]
+[WARNING]: Platform linux on host clusterpi02 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi02]
+[WARNING]: Platform linux on host clusterpi03 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi03]
+[WARNING]: Platform linux on host clusterpi04 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi04]
+[WARNING]: Platform linux on host clusterpi05 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi05]
+[WARNING]: Platform linux on host clusterpi06 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi06]
+[WARNING]: Platform linux on host clusterpi07 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi07]
+[WARNING]: Platform linux on host clusterpi08 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi08]
+[WARNING]: Platform linux on host clusterpi10 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi10]
+[WARNING]: Platform linux on host clusterpi09 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi09]
+[WARNING]: Platform linux on host clusterpi11 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi11]
+[WARNING]: Platform linux on host clusterpi12 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi12]
+[WARNING]: Platform linux on host clusterpi14 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi14]
+[WARNING]: Platform linux on host clusterpi17 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi17]
+[WARNING]: Platform linux on host clusterpi15 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi15]
+[WARNING]: Platform linux on host clusterpi19 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi19]
+[WARNING]: Platform linux on host clusterpi16 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi16]
+[WARNING]: Platform linux on host clusterpi18 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi18]
+[WARNING]: Platform linux on host clusterpi20 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi20]
+[WARNING]: Platform linux on host clusterpi21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi21]
+[WARNING]: Platform linux on host clusterpi22 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi22]
+[WARNING]: Platform linux on host clusterpi24 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi24]
+[WARNING]: Platform linux on host clusterpi23 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi23]
+[WARNING]: Platform linux on host clusterpi26 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi26]
+[WARNING]: Platform linux on host clusterpi28 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi28]
+[WARNING]: Platform linux on host clusterpi27 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi27]
+[WARNING]: Platform linux on host clusterpi29 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi29]
+[WARNING]: Platform linux on host clusterpi30 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi30]
+[WARNING]: Platform linux on host clusterpi32 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi32]
+[WARNING]: Platform linux on host clusterpi31 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi31]
+[WARNING]: Platform linux on host clusterpi33 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi33]
+[WARNING]: Platform linux on host clusterpi34 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi34]
+[WARNING]: Platform linux on host clusterpi35 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi35]
+[WARNING]: Platform linux on host clusterpi36 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more information.
+ok: [clusterpi36]
+
+TASK [Create local mapped directory for the nfs share with chmod 777] *******************************************************************************************************************
+skipping: [clusterpi01] => {"changed": false, "false_condition": "inventory_hostname != groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+changed: [clusterpi25] => {"changed": true, "path": "/data/"}
+changed: [clusterpi13] => {"changed": true, "path": "/data/"}
+changed: [clusterpi03] => {"changed": true, "path": "/data/"}
+changed: [clusterpi04] => {"changed": true, "path": "/data/"}
+changed: [clusterpi02] => {"changed": true, "path": "/data/"}
+changed: [clusterpi06] => {"changed": true, "path": "/data/"}
+changed: [clusterpi05] => {"changed": true, "path": "/data/"}
+changed: [clusterpi07] => {"changed": true, "path": "/data/"}
+changed: [clusterpi08] => {"changed": true, "path": "/data/"}
+changed: [clusterpi09] => {"changed": true, "path": "/data/"}
+changed: [clusterpi10] => {"changed": true, "path": "/data/"}
+changed: [clusterpi12] => {"changed": true, "path": "/data/"}
+changed: [clusterpi11] => {"changed": true, "path": "/data/"}
+changed: [clusterpi14] => {"changed": true, "path": "/data/"}
+changed: [clusterpi15] => {"changed": true, "path": "/data/"}
+changed: [clusterpi16] => {"changed": true, "path": "/data/"}
+changed: [clusterpi17] => {"changed": true, "path": "/data/"}
+changed: [clusterpi19] => {"changed": true, "path": "/data/"}
+changed: [clusterpi18] => {"changed": true, "path": "/data/"}
+changed: [clusterpi20] => {"changed": true, "path": "/data/"}
+changed: [clusterpi21] => {"changed": true, "path": "/data/"}
+changed: [clusterpi22] => {"changed": true, "path": "/data/"}
+changed: [clusterpi23] => {"changed": true, "path": "/data/"}
+changed: [clusterpi24] => {"changed": true, "path": "/data/"}
+changed: [clusterpi26] => {"changed": true, "path": "/data/"}
+changed: [clusterpi28] => {"changed": true, "path": "/data/"}
+changed: [clusterpi27] => {"changed": true, "path": "/data/"}
+changed: [clusterpi29] => {"changed": true, "path": "/data/"}
+changed: [clusterpi30] => {"changed": true, "path": "/data/"}
+changed: [clusterpi31] => {"changed": true, "path": "/data/"}
+changed: [clusterpi32] => {"changed": true, "path": "/data/"}
+changed: [clusterpi34] => {"changed": true, "path": "/data/"}
+changed: [clusterpi36] => {"changed": true, "path": "/data/"}
+changed: [clusterpi33] => {"changed": true, "path": "/data/"}
+changed: [clusterpi35] => {"changed": true, "path": "/data/"}
+
+TASK [Mount NFS share] ******************************************************************************************************************************************************************
+skipping: [clusterpi01] => {"changed": false, "false_condition": "inventory_hostname != groups['rpi-cluster-manager'][0]", "skip_reason": "Conditional result was False"}
+changed: [clusterpi25] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$BOKPcYsB0qt5qfBz$uwiIq/PjvZClBtMXBcTj28IGfywmo0vDuCFqBnDAVuztOHN1.1B.Goi6RDs28X/o7gqbNHThFCN1Nh/.fSRlY0,pass=$6$rounds=656000$BOKPcYsB0qt5qfBz$uwiIq/PjvZClBtMXBcTj28IGfywmo0vDuCFqBnDAVuztOHN1.1B.Goi6RDs28X/o7gqbNHThFCN1Nh/.fSRlY0,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi13] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$b/WetGsBfJ5lCHwZ$AHTFSDgfSOTQQcSlMW8GXDjU8utXyQVSOHT6inIbqI9uA1slBIytmDxxjzg.jrSEL1yvhXs7EkYjxIRlPW2nd1,pass=$6$rounds=656000$b/WetGsBfJ5lCHwZ$AHTFSDgfSOTQQcSlMW8GXDjU8utXyQVSOHT6inIbqI9uA1slBIytmDxxjzg.jrSEL1yvhXs7EkYjxIRlPW2nd1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi02] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$KucS37CfW7yWEsRq$lUZPwT9qr55bGB0p7zzDQb3GpoRoqAuxb1N2NCYHPuxjuLpLAAfrI2pnKVa5D92aHsGIJ0Am..YZGQFFy/6ul/,pass=$6$rounds=656000$KucS37CfW7yWEsRq$lUZPwT9qr55bGB0p7zzDQb3GpoRoqAuxb1N2NCYHPuxjuLpLAAfrI2pnKVa5D92aHsGIJ0Am..YZGQFFy/6ul/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi03] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$UTY.qCkbER/En8WP$AQG0RmIst2QAU0YqXDOArn8t9Z65c0QCJ12ZMMZb68kDksDUFsA44dRRmv/Y3SnqBT2NWq/n9UuC1qy61e6V./,pass=$6$rounds=656000$UTY.qCkbER/En8WP$AQG0RmIst2QAU0YqXDOArn8t9Z65c0QCJ12ZMMZb68kDksDUFsA44dRRmv/Y3SnqBT2NWq/n9UuC1qy61e6V./,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi04] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$rHWQb2xhYkNcHFqK$87HDE1XxESfsfaoHbmPKIrj0FlZP9nqtf65EcLYElublnUMA6lzYA7qs/HNueQ8EHyMiXZFBVVSYtuk6d2VnS.,pass=$6$rounds=656000$rHWQb2xhYkNcHFqK$87HDE1XxESfsfaoHbmPKIrj0FlZP9nqtf65EcLYElublnUMA6lzYA7qs/HNueQ8EHyMiXZFBVVSYtuk6d2VnS.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi05] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$c.PkFU0Fjqm7hrU4$dL01MjRpoMgFAg4AmhdsToaOkjQ7f/0YgjoMnyPa7You1JAmCCDxu7X2srJsjNtJxXC2kRZNEbBgFZmoopJh6/,pass=$6$rounds=656000$c.PkFU0Fjqm7hrU4$dL01MjRpoMgFAg4AmhdsToaOkjQ7f/0YgjoMnyPa7You1JAmCCDxu7X2srJsjNtJxXC2kRZNEbBgFZmoopJh6/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi07] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$GGRyqGVjzFE5S4hi$PSUPv5NnuUj0.ugVIiVIUYywvakb198CyQPhL0nASfSxg9TGQ8jtHUuB5Y.oahSWFD8WhU1zNEhOXK7wTKGwa0,pass=$6$rounds=656000$GGRyqGVjzFE5S4hi$PSUPv5NnuUj0.ugVIiVIUYywvakb198CyQPhL0nASfSxg9TGQ8jtHUuB5Y.oahSWFD8WhU1zNEhOXK7wTKGwa0,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi06] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$RHJvk86zHsM.kSNe$HFuvBWHEg8fgRQW9GzgkAqrfp7SMn1eXNXHooFB9kkyB2qyAt8DbdZSPGUDcH8GZrhrcBa0o6/Qti67mCG4Sv1,pass=$6$rounds=656000$RHJvk86zHsM.kSNe$HFuvBWHEg8fgRQW9GzgkAqrfp7SMn1eXNXHooFB9kkyB2qyAt8DbdZSPGUDcH8GZrhrcBa0o6/Qti67mCG4Sv1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi09] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$9CwLY7T2nqBueFAd$CVgEVscRo1hrf3ru6J3SZKuJA09/CyapClfEVuU1CW1GoYN48LtnkJ5y69znlqaIotfJuUAOd5T1pBD5Z6TNK1,pass=$6$rounds=656000$9CwLY7T2nqBueFAd$CVgEVscRo1hrf3ru6J3SZKuJA09/CyapClfEVuU1CW1GoYN48LtnkJ5y69znlqaIotfJuUAOd5T1pBD5Z6TNK1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi08] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$4JTIv7IJQ9FM1jbH$.1Hnq8t5UcLwj2aK.gcW8kvxJzfte8T8PhC5jAuIj1C9f.2N3vvSiu6sIoh2bGS6zHEmJwIZFlWcDGlf1utgr1,pass=$6$rounds=656000$4JTIv7IJQ9FM1jbH$.1Hnq8t5UcLwj2aK.gcW8kvxJzfte8T8PhC5jAuIj1C9f.2N3vvSiu6sIoh2bGS6zHEmJwIZFlWcDGlf1utgr1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi10] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$xNWn58n84xhRuT4D$FmkEdOd3z685xvsmA02aP7X.K28LvY2kPmn3GuoFvrPf7pSu/f5.nQwOAn0dwHptF5M7h0vu2Jq.bDi6UDzue/,pass=$6$rounds=656000$xNWn58n84xhRuT4D$FmkEdOd3z685xvsmA02aP7X.K28LvY2kPmn3GuoFvrPf7pSu/f5.nQwOAn0dwHptF5M7h0vu2Jq.bDi6UDzue/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi11] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$kLtDYwV4rD/7ssnI$ByeyTZ3U5QRvGJb3hdeD3jFZUZJCRDqLdkaf5gXQmhhbuj0VR2Z0TcnCyAb33N9KPO3s2GV5QUWDXPW/kKflJ/,pass=$6$rounds=656000$kLtDYwV4rD/7ssnI$ByeyTZ3U5QRvGJb3hdeD3jFZUZJCRDqLdkaf5gXQmhhbuj0VR2Z0TcnCyAb33N9KPO3s2GV5QUWDXPW/kKflJ/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi12] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$fdeOfrQZMK/SikPG$14kq0z2CAVCtJqzE5LS6YsvA7W1IYGv1QjrV3jkxRjJoTP0EZvD/vIzprbMJYfa1Io4l/Jv77BhM3udV68q.e/,pass=$6$rounds=656000$fdeOfrQZMK/SikPG$14kq0z2CAVCtJqzE5LS6YsvA7W1IYGv1QjrV3jkxRjJoTP0EZvD/vIzprbMJYfa1Io4l/Jv77BhM3udV68q.e/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi15] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$316Z8r20WsY5YUjQ$JQAhAVFFnhQLvT9T9E9OrTRfv1oKVOaKWIOb3ASJoZIJrxkLs.h2BEjZ3tLPdgoeD/xD3nm9H6/2UIOmx3dKO1,pass=$6$rounds=656000$316Z8r20WsY5YUjQ$JQAhAVFFnhQLvT9T9E9OrTRfv1oKVOaKWIOb3ASJoZIJrxkLs.h2BEjZ3tLPdgoeD/xD3nm9H6/2UIOmx3dKO1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi14] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$BW7lQ7BewMjgmA0v$ULE/reZXEX1dd6qptVG4/KqlpzmjIp4BbW94R6SiF5qFvCk9SMCwV3EmFmDekQzIagWvykxWpV/4m9SCsHkTp.,pass=$6$rounds=656000$BW7lQ7BewMjgmA0v$ULE/reZXEX1dd6qptVG4/KqlpzmjIp4BbW94R6SiF5qFvCk9SMCwV3EmFmDekQzIagWvykxWpV/4m9SCsHkTp.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi16] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$SFueShw.TCbs7J5J$QufcoMCzyQKIDKrnE1G1brwL/wBOCmrAA9nPTeNK5VjRfQyH.RXr3OmgIE.FVOXBm9Zy15.uJYKukaGSpPREH.,pass=$6$rounds=656000$SFueShw.TCbs7J5J$QufcoMCzyQKIDKrnE1G1brwL/wBOCmrAA9nPTeNK5VjRfQyH.RXr3OmgIE.FVOXBm9Zy15.uJYKukaGSpPREH.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi19] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$SOudy2ObHWamvpue$xxB.RJ8FcroW2ni3WQJepLFxdoq5CfmbA9wPM2fIKvHMNYkp.ujoKJIc2RgiSEZSoqqQxNagSfuSfdv2tmGlV0,pass=$6$rounds=656000$SOudy2ObHWamvpue$xxB.RJ8FcroW2ni3WQJepLFxdoq5CfmbA9wPM2fIKvHMNYkp.ujoKJIc2RgiSEZSoqqQxNagSfuSfdv2tmGlV0,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi20] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$dP.bYCbGl9kRsybn$BOx6HoXZzqXiu2G.jWoMWd7dVgwEqOz0ENNLWkv5oseAwG9pPzTZYoCxAdFcW.i0q4cWKWnvum4VpPmbAtv970,pass=$6$rounds=656000$dP.bYCbGl9kRsybn$BOx6HoXZzqXiu2G.jWoMWd7dVgwEqOz0ENNLWkv5oseAwG9pPzTZYoCxAdFcW.i0q4cWKWnvum4VpPmbAtv970,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi17] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$j5RYa64QwsYHrZtu$8mWH6WJyXv93i.1rphMq9/d6ep0nPA6ezT9VgBFKtlqrsaOIK9B8GOktXNg7LWp2K35hyw8I9IZwhgBQf2tV01,pass=$6$rounds=656000$j5RYa64QwsYHrZtu$8mWH6WJyXv93i.1rphMq9/d6ep0nPA6ezT9VgBFKtlqrsaOIK9B8GOktXNg7LWp2K35hyw8I9IZwhgBQf2tV01,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi18] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$6MlU4g7cO45AuZRq$3iCJvdWpZuKNcM2i2sRZOf17QPbIuRt8ojjM/3o26V75/tJuK7ecP1br1TBOUiGIKMCCup0AA.sTRS2wpjlHu/,pass=$6$rounds=656000$6MlU4g7cO45AuZRq$3iCJvdWpZuKNcM2i2sRZOf17QPbIuRt8ojjM/3o26V75/tJuK7ecP1br1TBOUiGIKMCCup0AA.sTRS2wpjlHu/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi21] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$p9HuN00cPYuHqVry$Om79st4qxWgTf/8c0S4cLV9y3j4TBZpMorTK37RSZ6d/GUasIoWG2IA6PBoUeRPkAAKVJ.5kJLAhmty7v2aWO1,pass=$6$rounds=656000$p9HuN00cPYuHqVry$Om79st4qxWgTf/8c0S4cLV9y3j4TBZpMorTK37RSZ6d/GUasIoWG2IA6PBoUeRPkAAKVJ.5kJLAhmty7v2aWO1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi22] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$GDqMzcTPKxWGt9np$EdpRFbgXaPpCj4tV4eSNOvCEtlTIUz0Nzxb7A76r7Jj1tj.KkZAHymp2./olVOS3wTWTyrT.TSXtUL4yyyrO..,pass=$6$rounds=656000$GDqMzcTPKxWGt9np$EdpRFbgXaPpCj4tV4eSNOvCEtlTIUz0Nzxb7A76r7Jj1tj.KkZAHymp2./olVOS3wTWTyrT.TSXtUL4yyyrO..,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi26] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$GxBcviETzTOBRoH7$LUcsij5p9qaEItNpFKFhmHw9RJpyEP7sqIQxXfQRMnAluBcMRgmB3Iz1etnu9HY96gHUwGR4y9DmJfdNg73O10,pass=$6$rounds=656000$GxBcviETzTOBRoH7$LUcsij5p9qaEItNpFKFhmHw9RJpyEP7sqIQxXfQRMnAluBcMRgmB3Iz1etnu9HY96gHUwGR4y9DmJfdNg73O10,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi23] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$o9IBLY1CwipUbYaP$9uKSNvkcPmVfqCFjQOPA5hqHcrybLrKHgMBzCx03B8Fja9NW.4glpSV5JQYXlcG8aqZdK9RPvRHtrF.8euz610,pass=$6$rounds=656000$o9IBLY1CwipUbYaP$9uKSNvkcPmVfqCFjQOPA5hqHcrybLrKHgMBzCx03B8Fja9NW.4glpSV5JQYXlcG8aqZdK9RPvRHtrF.8euz610,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi24] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$TygrgWe5H/d18OKW$WS4ondKMk5CU8Ub7B.jTsFbHktlFth8JdmMcVOK/HiI/TWbwKI/O.TjTEsVIFV7Vzhtn2IVdNaQAiboHoQDff1,pass=$6$rounds=656000$TygrgWe5H/d18OKW$WS4ondKMk5CU8Ub7B.jTsFbHktlFth8JdmMcVOK/HiI/TWbwKI/O.TjTEsVIFV7Vzhtn2IVdNaQAiboHoQDff1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi27] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$ZmOLCisrMP1cwD0B$S.FCToQmH.RXfxI8Vt.wuq1R8TtABY79cPMOHANDhZsYoKf.4eszWCMWeMRnIw4fpryx4Mvxr6XEwihU5Mfs1.,pass=$6$rounds=656000$ZmOLCisrMP1cwD0B$S.FCToQmH.RXfxI8Vt.wuq1R8TtABY79cPMOHANDhZsYoKf.4eszWCMWeMRnIw4fpryx4Mvxr6XEwihU5Mfs1.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi28] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$E2NiV2aupMJBGdRw$h6BtC5ni8N4iveX16D/qu70I1FdnOiNQB6Ch9bLf/Vqc.JSf2P//LQPmqy7swcPiXDd1XVzngCTwH3tOnFthQ1,pass=$6$rounds=656000$E2NiV2aupMJBGdRw$h6BtC5ni8N4iveX16D/qu70I1FdnOiNQB6Ch9bLf/Vqc.JSf2P//LQPmqy7swcPiXDd1XVzngCTwH3tOnFthQ1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi31] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$LmgBnlTnoANUk.vd$gsYy8oTALCEVhjq9mFZGLNCP52KAZJFxB20BOiU8CwolWYzjPLMo3yuCrpGC.mnldH/18566fBGyIdTwEJ40y/,pass=$6$rounds=656000$LmgBnlTnoANUk.vd$gsYy8oTALCEVhjq9mFZGLNCP52KAZJFxB20BOiU8CwolWYzjPLMo3yuCrpGC.mnldH/18566fBGyIdTwEJ40y/,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi29] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$YhskEN9qhLoEg2pI$HYw4elAjvvg.a5vjLf88zlWfpfBxAyc76w/u1Sf9o0Ll2SWbFKRIzsgB0Tq80o9EqxNH7e1mFhhE3ODp6Poli.,pass=$6$rounds=656000$YhskEN9qhLoEg2pI$HYw4elAjvvg.a5vjLf88zlWfpfBxAyc76w/u1Sf9o0Ll2SWbFKRIzsgB0Tq80o9EqxNH7e1mFhhE3ODp6Poli.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi30] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$Ns/XCypQU2bUC3hc$EAG3RtqyxzLc8RwDx37PO5rNPtqtvWIAznqb.dCeE8TRB9947H47Fhmo1yHqyocDOoIy6YKNWYJvpfwA600ZW0,pass=$6$rounds=656000$Ns/XCypQU2bUC3hc$EAG3RtqyxzLc8RwDx37PO5rNPtqtvWIAznqb.dCeE8TRB9947H47Fhmo1yHqyocDOoIy6YKNWYJvpfwA600ZW0,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi32] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$q7giqqB9knbaH2SM$JnX5K9JL/WX0QaRqaLYzrNy0G0n7NAC0p7GIb.KOxJOuf4zDpBqnL3SfhNWTQUXA1C.OZkmTxmJQiJKZs82h51,pass=$6$rounds=656000$q7giqqB9knbaH2SM$JnX5K9JL/WX0QaRqaLYzrNy0G0n7NAC0p7GIb.KOxJOuf4zDpBqnL3SfhNWTQUXA1C.OZkmTxmJQiJKZs82h51,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi34] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$kR6kt6n6zsD9mQ0F$1zKrECCSfP3rpUETSFJ9I87FIqEqp3nmxwRxm0cA07t2AkhKgJm1IHmrMCzQ6F2uxkJNBudN1mu7iLGJyckuP1,pass=$6$rounds=656000$kR6kt6n6zsD9mQ0F$1zKrECCSfP3rpUETSFJ9I87FIqEqp3nmxwRxm0cA07t2AkhKgJm1IHmrMCzQ6F2uxkJNBudN1mu7iLGJyckuP1,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi33] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$BL3WBj22zdBZ1vid$QyUvZj.HD9FMlst0kqqCcoVQEdJzfAH2R1Uyl196Pg/L0bqWfhARWWiNXA9SZBsGyBZFcPV66kztQtS/JwBto0,pass=$6$rounds=656000$BL3WBj22zdBZ1vid$QyUvZj.HD9FMlst0kqqCcoVQEdJzfAH2R1Uyl196Pg/L0bqWfhARWWiNXA9SZBsGyBZFcPV66kztQtS/JwBto0,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi36] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$q6vWNISIPy1vxx4d$wFp5Hty4WfNPdOz7A.UhKUaio3vTlU7TSjeJr5.8QluJhRPHDCPk9k0fR0nrvGfMJkbqfeLJJ78uYhd18WmdE.,pass=$6$rounds=656000$q6vWNISIPy1vxx4d$wFp5Hty4WfNPdOz7A.UhKUaio3vTlU7TSjeJr5.8QluJhRPHDCPk9k0fR0nrvGfMJkbqfeLJJ78uYhd18WmdE.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+changed: [clusterpi35] => {"backup_file": "", "boot": "yes", "changed": true, "dump": "0", "fstab": "/etc/fstab", "fstype": "nfs", "name": "/data/", "opts": "rw,username=rpicluster,password=$6$rounds=656000$lBaaBS/CO0.0xx5C$4mot.heg34ZIcGuLZmN1479jwtthL0SW7kjoTUOoRTphBKLxjjv5bcjBBjewjTKO80CzAPlgkhv5AY13U//RX.,pass=$6$rounds=656000$lBaaBS/CO0.0xx5C$4mot.heg34ZIcGuLZmN1479jwtthL0SW7kjoTUOoRTphBKLxjjv5bcjBBjewjTKO80CzAPlgkhv5AY13U//RX.,passfile=/root/.nfscredentials", "passno": "0", "src": "10.10.10.100:/data/"}
+
+PLAY RECAP ******************************************************************************************************************************************************************************
+clusterpi01                : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+clusterpi02                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi03                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi04                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi05                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi06                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi07                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi08                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi09                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi10                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi11                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi12                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi13                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi14                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi15                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi16                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi17                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi18                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi19                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi20                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi21                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi22                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi23                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi24                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi25                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi26                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi27                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi28                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi29                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi30                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi31                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi32                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi33                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi34                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi35                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+clusterpi36                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

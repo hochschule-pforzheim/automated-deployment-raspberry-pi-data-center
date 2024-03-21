@@ -18,6 +18,7 @@ Der Raspberry Pi ist ein kostengünstiger und leistungsfähiger Computer, der in
   - [Cisco SF250-48](#cisco-sf250-48)
   - [Docker](#docker)
   - [Evaluation](#evaluation)
+  - [Logs](#logs)
   - [NGINX](#nginx)
   - [Portainer](#portainer)
 
@@ -43,6 +44,10 @@ Im Ordner `/docker/` sind Compose files abgelegt.
 ## Evaluation
 
 Im Ordner `/evaluation/` die Ergebnisse aus Kapitel 6.
+
+## Logs
+
+Im Ordner `/logs/` alle Logs zu Playbook Ausführungen.
 
 ## NGINX
 

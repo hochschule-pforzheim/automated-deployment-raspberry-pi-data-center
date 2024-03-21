@@ -1,0 +1,15 @@
+% ansible-playbook -v -b -c paramiko swarm_deployment_manager.yml  
+
+PLAY [Swarm Deployment Manager] ******************************************************************************************************************************************
+
+TASK [Gathering Facts] *******************************************************************************************************************************************
+[WARNING]: Platform linux on host clusterpi01.local is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.15/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [clusterpi01.local]
+
+TASK [Retrieve Swarm join token (Worker)] ************************************************************************************************************************
+skipping: [clusterpi01.local] => {"changed": false, "false_condition": "inventory_hostname != groups['rpi-cluster-fqdn'][0]", "skip_reason": "Conditional result was False"}
+
+PLAY RECAP *******************************************************************************************************************************************************
+clusterpi01.local          : ok=2    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
